@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form onsubmit="domultiply();return false">
+
+    digit1 = <input type="text" id="digit1">
+    <br>
+    digit2 = <input type="text" id="digit2">
+    <br>
+    <button type="subnmit">multiply</button>
+
+</form>
+
+
+    <script>
+function domultiply()
+console.log ("multiplication");
+
+let digit1 = document.querySelector("#digit1").value;
+let digit2 = document.querySelector("#digit2").value;
+
+digit1 = digit(digit1)
+digit2 = digit(digit2)
+
+console.log("digit1: ", digit1);
+consloe.log("digit: ", digit2); 
+
+let result = digit1 * digit2;
+
+console.log ("result:," result);
+
+    
+
+    </script>
+
+
+
+</body>
+</html>
