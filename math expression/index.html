@@ -10,11 +10,9 @@
 
 <form onsubmit="dosum();return false">
 
-    num1: <input type="text">
+    num1: <input type="text" id="num1">
     <br>
-    num2: <input type="text">
-    <br>
-    num3: <input type="text">
+    num2: <input type="text" id="num2">
     <br>
     <button type="submit">sum</button>
 </form>
@@ -23,6 +21,24 @@
 
     function dosum() {
         console.log ("pakistan");
+
+       let num1 = document.querySelector("#num1").value;
+       let num2 = document.querySelector("#num2").value;
+
+       num1 = Number(num1)
+       num2 = Number(num2)
+       
+
+       console.log("num1: ", num1);
+       console.log("num2: ", num2);
+
+       let result = num1 + num2;
+       
+       console.log("result: ", result);
+
+
+
+
     }
  </script>
 
