@@ -8,37 +8,36 @@
 </head>
 <body>
 
-<form onsubmit="domultiply();return false">
-
-    digit1 = <input type="text" id="digit1">
+<form>
+    num1: <input type="number" id="num1">
     <br>
-    digit2 = <input type="text" id="digit2">
-    <br>
-    <button type="subnmit">multiply</button>
+    num2: <input type="number" id="num2">
 
+    <br> <br>
+     <button type="submit" onclick="dosum(); return false">sum</button> 
+     <button type="submit" onclick="dominus(); return false">minus</button> <br>
+     <button type="submit" onclik="domultply(); return false">multiply</button> 
+     <button type="submit" onclick="dodivide();return false">divide</button>
+     
+     </button>    
 </form>
 
-
     <script>
-function domultiply()
-console.log ("multiplication");
+        function dosum () {
+            let num1 = document.querySelector("#num1").value
+            let num2 = document.querySelector("#num2").value
 
-let digit1 = document.querySelector("#digit1").value;
-let digit2 = document.querySelector("#digit2").value;
+            num1 = Number (num1);
+            num2 = Number (num2);
 
-digit1 = digit(digit1)
-digit2 = digit(digit2)
+            let result = num1 + num2;
 
-console.log("digit1: ", digit1);
-consloe.log("digit: ", digit2); 
+            document.querySelector("#result").innerHTML=result;
 
-let result = digit1 * digit2;
-
-console.log ("result:," result);
-
-    
-
+        }
     </script>
+
+
 
 
 
