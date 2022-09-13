@@ -7,38 +7,39 @@
     <title>Document</title>
 </head>
 <body>
+    
+<form onsubmit="doSum(); return false">
 
-<form>
-    num1: <input type="number" id="num1">
-    <br>
-    num2: <input type="number" id="num2">
+num1: <input type="number" min="1" max="100" id="num1">
+<br>
+num2: <input type="number" min="1"  max="100" id="num2">
+<br>
+<button type="submit">Sum</button>
 
-    <br> <br>
-     <button type="submit" onclick="dosum(); return false">sum</button> 
-     <button type="submit" onclick="dominus(); return false">minus</button> <br>
-     <button type="submit" onclik="domultply(); return false">multiply</button> 
-     <button type="submit" onclick="dodivide();return false">divide</button>
-     
-     </button>    
-</form>
+</form> 
 
-    <script>
-        function dosum () {
-            let num1 = document.querySelector("#num1").value
-            let num2 = document.querySelector("#num2").value
+<script>
 
-            num1 = Number (num1);
-            num2 = Number (num2);
+function doSum () {
 
-            let result = num1 + num2;
+ console.log("pakistan");
 
-            document.querySelector("#result").innerHTML=result;
+ let num1 = +document.querySelector("#num1").value;
+ let num2 = +document.querySelector("#num2").value;
 
-        }
-    </script>
+ console.log("num1: ",num1);
+ console.log("num2: ",num2);
+
+ let result = num1 + num2;
+
+ console.log("result: ", result);
 
 
+}
 
+
+
+</script>
 
 
 </body>
