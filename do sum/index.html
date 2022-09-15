@@ -18,12 +18,51 @@ num2: <input type="number" min="1"  max="100" id="num2">
 <button type="submit" onclick="doMinus();return false">Minus</button>
 <Button type="submit" onclick="doMultiply();return false">Multiply</Button>
 <button type="submit" onclick="doDivide();return false">divide</button>
+<button type="submit" onclick="doPercentage();return false">Percentage</button>
+<button type="submit" onclick="doModulus();return false">Modulus</button>
 
 </form> 
 
 <h2 id="RESULT"></h2>
 
 <script>
+
+
+function doModulus () {
+
+    console.log("Modulus");
+
+    let num1= +document.querySelector("#num1").value;
+    let num2 = +document.querySelector("#num2").value;
+
+    console.log("num1:",num1);
+    console.log("num2:",num2);
+
+    let result = num1 % num2;
+    console.log("result",result);
+
+    document.querySelector("#RESULT").innerHTML=result;
+}
+
+
+function doPercentage () {
+
+console.log("Percentages");
+
+let num1= +document.querySelector("#num1").value;
+let num2 = +document.querySelector("#num2").value;
+
+console.log("num1: ",num1);
+console.log("num2:" ,num2);
+
+let result = num1 * num2 / 100;
+
+console.log("result",result);
+
+document.querySelector("#RESULT").innerHTML=result;
+
+
+} 
 
     function doDivide() {
 
