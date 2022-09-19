@@ -7,44 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>varialbes</h2>
+    
 
+<form onsubmit="doCheck(); return false">
 
-    <script>
+num1: <input type="number" id="mark">
+<br>    <br>
 
-      //  let mycountry= "PAKISTAN";
+<button type="submit">Grades</button>
 
-       // alert(mycountry);
+</form>
 
-        // mycountry= "PALASTIN";
+<h2>Grades</h2>
+<script>
 
-        // alert(mycountry);
+function doCheck () {
 
-        let num= 5;
-        let num1= 7;
+    console.log("doCheck");
+    num1= +document.querySelector("#mark").value;
+    console.log(num1)
 
-        console.log("num:",num);    
-        console.log("num1:",num1);
+    if(num1 === 80) {
 
-        let result = num + num1;
-       console.log("total",result);
-
-       
-
-
-
-
-
+    console.log("A");
+    
+}
 
 
 
-
-    </script>
+</script>
 
 </body>
-
-
-
-
-
 </html>
