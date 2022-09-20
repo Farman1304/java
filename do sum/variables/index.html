@@ -7,35 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    
 
-<form onsubmit="doCheck(); return false">
+    <form onsubmit="docheck();return false">
+    temp: <input type="number" id="weather" min="0" max="50">
 
-num1: <input type="number" id="mark">
-<br>    <br>
-
-<button type="submit">Grades</button>
-
+    <button type="submit">check</button>
 </form>
-
-<h2>Grades</h2>
-<script>
-
-function doCheck () {
-
-    console.log("doCheck");
-    num1= +document.querySelector("#mark").value;
-    console.log(num1)
-
-    if(num1 === 80) {
-
-    console.log("A");
     
-}
+<h2 id="ab">result</h2>
+
+<script>    
+
+function docheck () 
+    console.log ("pakistan")
+    let temp= +document.querySelector("#weather").value;
 
 
+if(temp <25) {
+        let result= "its cold"
+     result=document.querySelector("#ab")=result;
+}else {
+    if (temp <30) {
+        let result ="its hot"
+        result=document.querySelector("#ab").innerHTML=result;}}
+    
+    
+        
+    
 
+   // document.querySelector("#ab").innerHTML=result;
 </script>
+
 
 </body>
 </html>
