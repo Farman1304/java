@@ -10,32 +10,37 @@
 
     <form onsubmit="docheck();return false">
     temp: <input type="number" id="weather" min="0" max="50">
-
+<br>
     <button type="submit">check</button>
+    <br>
+    <h2 id="result"></h2>
 </form>
     
-<h2 id="ab">result</h2>
+<script>
+    function docheck() {
+    let temp= +document.querySelector("#weather").value
+    console.log("temp:",temp);
 
-<script>    
+    if(temp <25) {
+    let result= "its cold"
+    result = document.querySelector("#result").innerHTML=result;
 
-function docheck () 
-    console.log ("pakistan")
-    let temp= +document.querySelector("#weather").value;
+    }else{
+        if (temp <30) {
+            let result = "Not bad"
+            result= document.querySelector("#result").innerHTML=result;
 
-
-if(temp <25) {
-        let result= "its cold"
-     result=document.querySelector("#ab")=result;
-}else {
-    if (temp <30) {
-        let result ="its hot"
-        result=document.querySelector("#ab").innerHTML=result;}}
-    
-    
+            }else{
+         if(temp ===31) {
+            let result = "bad"
+            result=document.querySelector("#result").innerHTML=result;
         
-    
+         }   
 
-   // document.querySelector("#ab").innerHTML=result;
+            }
+        }
+    }
+    
 </script>
 
 
