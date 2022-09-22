@@ -13,7 +13,8 @@
 <br>
     <button type="submit">check</button>
     <br>
-    <h2 id="result"></h2>
+    <h2 Id="result"></h2>
+    
 </form>
     
 <script>
@@ -23,23 +24,36 @@
 
     if(temp <25) {
     let result= "its cold"
+    console.log("status:",result);
+
     result = document.querySelector("#result").innerHTML=result;
+    
 
     }else{
         if (temp <30) {
             let result = "Not bad"
+            console.log("status:",result);
             result= document.querySelector("#result").innerHTML=result;
+    
 
             }else{
          if(temp ===31) {
             let result = "bad"
-            result=document.querySelector("#result").innerHTML=result;
-        
-         }   
-
+            console.log("status:",result);
+                
+          reslut=  document.querySelector("#result").innerHTML=result;
+         }else{
+            if(temp=>40) {
+                let result = "heatstrok"
+                console.log ("status:",result);
+                result=document.querySelector("#result").innerHTML=result;
             }
-        }
-    }
+          
+
+         }   
+         }
+         }
+         }
     
 </script>
 
