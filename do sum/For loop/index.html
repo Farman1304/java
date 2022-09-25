@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+ Table: <input type="number" id="table1"> <br>
+ 
+<br>
+ <button type="submit" onclick="printTable();return false" >Table</button>
+
+    </form>
+
+
+    <script>
+    function printTable () {
+        console.log("5th table");
+
+        let Table = document.querySelector("#table1").value;
+       // let digit2 = document.querySelector("#table2").value;
+        console.log("digit1: ", Table);
+      //  console.log("digit2: ", digit2);
+
+for (let i = 0;i < 20; i++) {
+
+    console.log("loop: " , i);
+}}
+    </script>
+</body>
+</html>
