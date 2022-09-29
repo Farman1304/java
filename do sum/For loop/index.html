@@ -16,20 +16,25 @@
 
     </form>
 
+    <h2 id =result></h2>
 
     <script>
-    function printTable () {
-        console.log("5th table");
 
-        let Table = document.querySelector("#table1").value;
-       // let digit2 = document.querySelector("#table2").value;
-        console.log("digit1: ", Table);
-      //  console.log("digit2: ", digit2);
+        function printTable () {
+        console.log("tables");
+        table = document.querySelector("#table1").value;
+        console.log("table:" , table);        
 
-for (let i = 0;i < 20; i++) {
+        for (let i = 0 ; i < table ; i++){
+        
+        console.log(`i X ${1+i}= ${table*(1+i)}`);
+          // let result = (`4 X ${1+i} = ${4*(i+1)}`);
 
-    console.log("loop: " , i);
-}}
+          //  document.querySelector("#result").innerHTML=result;
+
+        }}
+
+
     </script>
 </body>
 </html>
