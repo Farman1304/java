@@ -9,9 +9,11 @@
 <body>
 
     <form>
- Table: <input type="number" id="table1"> <br>
- 
-<br>
+ table: <input type="number" id="table1"> <br>
+ <br>
+ limit : <input type="number" id="till">
+ <br>
+ <br>
  <button type="submit" onclick="printTable();return false" >Table</button>
 
     </form>
@@ -22,18 +24,20 @@
 
         function printTable () {
         console.log("tables");
-        table = document.querySelector("#table1").value;
-        console.log("table:" , table);        
-
-        for (let i = 0 ; i < table ; i++){
+        table = +document.querySelector("#table1").value;
+       // console.log("table:" , table); 
         
-        console.log(`i X ${1+i}= ${table*(1+i)}`);
-          // let result = (`4 X ${1+i} = ${4*(i+1)}`);
+        limit= +document.querySelector("#till").value;
+       // console.log("limit:",limit);
+        
 
-          //  document.querySelector("#result").innerHTML=result;
+        for (let i = 0 ; i < limit ; i++){
+        
+       console.log(`${table} X ${1+i}= ${table*(1+i)}`);
+        let result =( `${table} x ${1+i} = ${table* (i+1)} <br>`);
 
+        document.querySelector("#result").innerHTML=result;
         }}
-
 
     </script>
 </body>
